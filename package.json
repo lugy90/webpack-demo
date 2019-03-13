@@ -1,0 +1,26 @@
+{
+  "name": "webpack_demo",
+  "version": "1.0.0",
+  "description": "webpack demo",
+  "main": "webpack.config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.29.6"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lugy90/webpack_demo.git"
+  },
+  "keywords": [
+    "webpack_demo"
+  ],
+  "author": "lugy90",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lugy90/webpack_demo/issues"
+  },
+  "homepage": "https://github.com/lugy90/webpack_demo#readme"
+}
