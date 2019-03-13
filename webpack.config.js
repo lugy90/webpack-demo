@@ -39,7 +39,7 @@ module.exports = {
               // 写法和之前基本一致
               use: ExtractCssPlugin.extract({
                 // 必须这样写，否则会报错
-                fallback: 'style-loader',
+                fallback: 'style-loader', //如果抽出失败则使用内联样式
                 use: [{
                     loader: 'css-loader',
                     options: { 
