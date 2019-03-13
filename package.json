@@ -5,10 +5,12 @@
   "main": "webpack.config.js",
   "dependencies": {},
   "devDependencies": {
-    "webpack": "^4.29.6"
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
   },
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "webpack"
   },
   "repository": {
     "type": "git",
