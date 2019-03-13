@@ -93,7 +93,8 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var sum = __webpack_require__(/*! ./sum */ \"./app/sum.js\");\nconsole.log(sum(1, 2));\n\n//# sourceURL=webpack:///./app/index.js?");
+"use strict";
+eval("\n\nvar _sum = __webpack_require__(/*! ./sum */ \"./app/sum.js\");\n\nvar _sum2 = _interopRequireDefault(_sum);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nconsole.log((0, _sum2.default)(1, 2)); // var sum = require('./sum');\n// console.log(sum(1, 2));  //commonjs\n\n//# sourceURL=webpack:///./app/index.js?");
 
 /***/ }),
 
@@ -102,9 +103,10 @@ eval("var sum = __webpack_require__(/*! ./sum */ \"./app/sum.js\");\nconsole.log
   !*** ./app/sum.js ***!
   \********************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = function(a, b) {\n    return a + b\n}\n\n//# sourceURL=webpack:///./app/sum.js?");
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\n// module.exports = function(a, b) {\n//     return a + b\n// }    // commonjs\n\nexports.default = function (a, b) {\n    return a + b;\n}; //es6\n\n//# sourceURL=webpack:///./app/sum.js?");
 
 /***/ })
 
