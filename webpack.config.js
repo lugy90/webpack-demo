@@ -1,4 +1,5 @@
 const path = require('path')
+const ExtractCssPlugin = require("extract-text-webpack-plugin")
 module.exports = {
     entry:  './app/index.js', // 入口文件
     output: {
@@ -34,17 +35,24 @@ module.exports = {
                 ]
             },
             {
-                test: /\.css$/,
-                use: ['style-loader',
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            modules: true
-                           }
+              test: /\.css$/,
+              // 写法和之前基本一致
+              use: ExtractCssPlugin.extract({
+                // 必须这样写，否则会报错
+                fallback: 'style-loader',
+                use: [{
+                    loader: 'css-loader',
+                    options: { 
+                        modules: true
                     }
-                ]
+                }]
+              })
             }
         ]
     },
+    plugins: [
+      // 输出的文件路径
+      new ExtractCssPlugin("css/[name].[hash].css")
+    ],
     mode: 'development'
 }
