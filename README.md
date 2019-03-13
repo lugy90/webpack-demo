@@ -1,2 +1,2 @@
-# webpack-demo
+# webpack_demo
 webpack配置示例
